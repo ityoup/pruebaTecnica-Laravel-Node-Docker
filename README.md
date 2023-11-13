@@ -16,6 +16,31 @@ Para construir y ejecutar los contenedores definidos en el archivo `docker-compo
 docker-compose up --build
 ```
 
+Diagrama de como funciona con usando docker:
+
+![docker](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/6d06dcf6-bbb1-4f8c-b0a6-746f9d186caf)
+
+Diagrama de flujo:
+
+![DF](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/bfd88f7d-b28e-4553-ab4e-ccbebdc8b011)
+
+
+
 Una vez arrancado el proyecto, esperaremos aproximadamente 1 minutos a que los contenedores se ejecuten:
+
+![terminal](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/78686126-578f-4ea5-86fc-f77e351ca58d)
+
+Esperemos a que la base de datos este arriba, siendo, aparecerá algo como
+
+port: 33060, socket: /var/run/mysqld/mysqlx.sock
+
+![Captura desde 2023-11-13 07-43-26](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/c81d45cd-2ee2-42c6-b94a-70a661fead15)
+
+Una vez haya aparecido, accedemos a: http://localhost:8000/hub
+
+Y veremos la interfaz: 
+
+![appLaravel](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/186b88cf-c8d8-4c52-88b2-b3cd50a2d53e)
+
 
 
