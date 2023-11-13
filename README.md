@@ -15,6 +15,11 @@ Para construir y ejecutar los contenedores definidos en el archivo `docker-compo
 ```bash
 docker-compose up --build
 ```
+o
+```bash
+docker compose up --build
+```
+(Procura tener la versión más actualizada de docker)
 
 Diagrama de como funciona con usando docker:
 
