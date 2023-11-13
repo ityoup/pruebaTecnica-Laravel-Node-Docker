@@ -40,6 +40,7 @@ Una vez haya aparecido, accedemos a: http://localhost:8000/hub
 
 Y veremos la interfaz: 
 
-![ezgif com-video-to-gif](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/117b7d0e-0fa2-4a12-8f14-04cd32475378)
+![ezgif com-video-to-gif](https://github.com/ityoup/pruebaTecnica-Laravel-Node-Docker/assets/73605425/05140792-11e8-492a-a4cd-da2121ce821c)
+
 
 
