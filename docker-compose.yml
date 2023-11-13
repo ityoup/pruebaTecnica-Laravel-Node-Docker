@@ -10,14 +10,14 @@ services:
       - 3307:3306
     volumes:
       - ./prueba.sql:/docker-entrypoint-initdb.d/prueba.sql
-    container_name: db_bodasContratos
+    container_name: db_api
 
   web:
     build:
       context: ./pruebaTecnica
     ports:
       - "8000:8000"
-    container_name: web_bodasContratos
+    container_name: laravel_app
 
   api:
     build:
@@ -26,7 +26,7 @@ services:
       - "5000:5000"
     depends_on:
       - mysqldb
-    container_name: api_bodasContratos
+    container_name: api_node
 
 
 
