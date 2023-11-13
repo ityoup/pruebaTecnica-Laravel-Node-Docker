@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysqldb:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=WILDones123
+      - MYSQL_DATABASE=blog
+    ports:
+      - 3307:3306
+    volumes:
+      - ./prueba.sql:/docker-entrypoint-initdb.d/prueba.sql
+    container_name: db_bodasContratos
+
+  web:
+    build:
+      context: ./pruebaTecnica
+    ports:
+      - "8000:8000"
+    container_name: web_bodasContratos
+
+  api:
+    build:
+      context: ./pruebaTecnicaAPI
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mysqldb
+    container_name: api_bodasContratos
+
+
+
+  # Agregamos un servicio para mostrar un mensaje al final
+  message-service:
+    image: alpine
+    command: ["/bin/sh", "-c", "echo 'Los contenedores han terminado de ejecutarse'"]
