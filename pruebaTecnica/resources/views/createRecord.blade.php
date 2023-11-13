@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/form.css" type="text/css">
         <link rel="stylesheet" href="css/floatingBar.css" type="text/css">
 
-    <title>New User Signup</title>
+    <title>Register</title>
     <nav class="header">
         <br>
         <div class="header-container">
